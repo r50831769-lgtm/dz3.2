@@ -1,0 +1,275 @@
+h1 {
+  font-size: 48px;
+}
+@media (max-width: 720px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+
+section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+@media (max-width: 1270px) {
+  section {
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+}
+
+section:nth-child(3) {
+  background-color: #000;
+}
+
+section:nth-child(5) {
+  background-color: #000;
+}
+
+.normal {
+  font-weight: 400;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  padding: 0 32px;
+}
+@media (max-width: 1270px) {
+  .hero {
+    flex-direction: column-reverse;
+  }
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.header {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.hero-content {
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  flex-direction: column;
+  gap: 48px;
+  height: 100%;
+}
+@media (max-width: 1270px) {
+  .hero-content {
+    gap: 24px;
+  }
+}
+
+.hero-links {
+  display: flex;
+  gap: 48px;
+}
+.hero-links .hero-icon {
+  width: 64px;
+  height: 64px;
+}
+
+.hero-description {
+  max-width: 701px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #000;
+}
+
+.hero-image {
+  margin-left: auto;
+}
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.skills-container {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  height: 180px;
+  width: 186px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 8px;
+  border: 1px solid #000;
+  color: #000;
+}
+.skill-card i {
+  font-size: 48px;
+}
+.skill-card p {
+  font-size: 18px;
+  font-weight: 800;
+}
+@media (max-width: 470px) {
+  .skill-card {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+.white {
+  color: white;
+  padding: 100px 32px;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.experience-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--white);
+}
+.experience-card .header-wrapper {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.experience-card .card-header {
+  font-size: 30px;
+}
+.experience-card .card-description {
+  font-size: 18px;
+}
+.experience-card .experience-icon {
+  display: inline;
+  width: 32px;
+  height: 32px;
+}
+
+.about {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 123px;
+}
+
+.about-content .header {
+  text-align: left;
+}
+.about-content .about-description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000;
+}
+
+.avatar-wrapper {
+  height: 527px;
+  width: 495px;
+  flex-shrink: 0;
+}
+.avatar-wrapper img {
+  height: 100%;
+  width: 100%;
+}
+
+.projects-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.project {
+  display: flex;
+  gap: 124px;
+}
+.project .project-image {
+  height: 338px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.project .project-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.project .project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 495px;
+}
+.project .project-info .number {
+  font-size: 48px;
+}
+.project .project-info .project-title {
+  font-size: 30px;
+}
+.project .project-info .project-description {
+  color: white;
+}
+.project .more-btn {
+  display: block;
+  padding: 16px 20px;
+  border-radius: 8px;
+  margin-right: auto;
+}
+
+.project:nth-child(even) .project-image {
+  order: 1;
+}
+
+.contacts {
+  flex-shrink: 1;
+  flex-grow: 2;
+  max-width: 598px;
+}
+.contacts h2 {
+  font-size: 48px;
+  line-height: 48px;
+}
+.contacts .description {
+  margin: 32px 0;
+  color: #000;
+  line-height: 24px;
+}
+
+.call-me {
+  display: flex;
+  justify-content: space-between;
+  gap: 123px;
+}
+
+.email,
+.phone {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.email {
+  margin-bottom: 12px;
+}/*# sourceMappingURL=style.css.map */
