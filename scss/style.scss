@@ -189,19 +189,26 @@ section:nth-child(5) {
   display: flex;
   flex-direction: column;
   gap: 32px;
-}
 
-.project {
-  display: flex;
-  gap: 124px;
+  .project {
+    display: flex;
+    gap: 124px;
+    @media (max-width: 1270px) {
+      flex-direction: column;
+    }
+  }
   .project-image {
     height: 338px;
     border-radius: 20px;
     overflow: hidden;
+
     img {
       object-fit: cover;
       width: 100%;
       height: 100%;
+    }
+    @media (max-width: 1270px) {
+      order: 1;
     }
   }
   .project-info {
@@ -219,12 +226,19 @@ section:nth-child(5) {
     .project-description {
       color: $white;
     }
+    @media (max-width: 1270px) {
+      flex-direction: column;
+      order: 2;
+    }
   }
   .more-btn {
     display: block;
     padding: 16px 20px;
     border-radius: 8px;
     margin-right: auto;
+  }
+  @media (max-width: 1270px) {
+    flex-direction: column-reverse;
   }
 }
 
